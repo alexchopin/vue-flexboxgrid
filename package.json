@@ -1,6 +1,6 @@
 {
   "name": "vue-flexboxgrid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vue components based on Flexboxgrid",
   "main": "index.js",
   "scripts": {
