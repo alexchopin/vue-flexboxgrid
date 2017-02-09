@@ -1,0 +1,25 @@
+{
+  "name": "vue-flexboxgrid",
+  "version": "1.0.0",
+  "description": "Vue components based on Flexboxgrid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexchopin/vue-flexboxgrid.git"
+  },
+  "keywords": [
+    "vue",
+    "flexboxgrid",
+    "vue.js",
+    "flexbox"
+  ],
+  "author": "Alexandre Chopin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexchopin/vue-flexboxgrid/issues"
+  },
+  "homepage": "https://github.com/alexchopin/vue-flexboxgrid#readme"
+}
