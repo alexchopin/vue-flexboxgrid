@@ -46,6 +46,7 @@
   },
   "pre-commit": "lint:staged",
   "dependencies": {
+    "flexboxgrid": "^6.3.2",
     "vue": "^2.1.10"
   },
   "devDependencies": {
