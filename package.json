@@ -1,7 +1,11 @@
 {
   "name": "vue-flexboxgrid",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Vue components based on Flexboxgrid",
+  "main": "dist/",
+  "files": [
+    "dist/vue-flexboxgrid.min.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexchopin/vue-flexboxgrid.git"
