@@ -41,8 +41,7 @@
       "git add"
     ],
     "*.{vue,css}": [
-      "stylefmt",
-      "stylelint"
+      "stylefmt"
     ]
   },
   "pre-commit": "lint:staged",

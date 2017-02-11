@@ -1,6 +1,6 @@
 <template>
   <div :class="classes">
-    <slot/>
+    <slot></slot>
   </div>
 </template>
 
@@ -62,7 +62,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .row {
   box-sizing: border-box;
   display: -webkit-box;
@@ -80,35 +80,30 @@ export default {
   margin-right: -0.5rem;
   margin-left: -0.5rem;
 }
-
 .row.reverse {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
 }
-
 .start-xs {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
   text-align: start;
 }
-
 .center-xs {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
 }
-
 .end-xs {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
   text-align: end;
 }
-
 .top-xs {
   -webkit-box-align: start;
   -ms-flex-align: start;

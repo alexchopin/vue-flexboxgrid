@@ -1,6 +1,6 @@
 <template>
   <div :class="classes">
-    <slot/>
+    <slot></slot>
   </div>
 </template>
 
@@ -36,7 +36,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .col.reverse {
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;

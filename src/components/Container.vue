@@ -1,6 +1,6 @@
 <template>
   <div :class="classes">
-    <slot/>
+    <slot></slot>
   </div>
 </template>
 
@@ -20,7 +20,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .container-fluid, .container {
   margin-right: auto;
   margin-left: auto;
@@ -32,18 +32,21 @@ export default {
 }
 
 @media only screen and (min-width: 48em) {
+
   .container {
     width: 49rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
+
   .container {
     width: 65rem;
   }
 }
 
 @media only screen and (min-width: 75em) {
+
   .container {
     width: 76rem;
   }
