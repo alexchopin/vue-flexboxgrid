@@ -36,12 +36,13 @@ Vue.use(VueFlexboxgrid)
 
 ### Container
 
+Component:
 ```html
 <container>
   Your content
 </container>
 ```
-
+Props:
 ```js
 reverse: { type: Boolean, default: false },
 fluid: { type: Boolean, default: false }
@@ -49,12 +50,13 @@ fluid: { type: Boolean, default: false }
 
 ### Row
 
+Component:
 ```html
 <row>
   Your content
 </row>
 ```
-
+Props:
 ```js
 reverse: { type: Boolean, default: false },
 startXs: { type: Boolean, default: false },
@@ -93,12 +95,13 @@ betweenLg: { type: Boolean, default: false }
 
 ### Column
 
+Component:
 ```html
 <column>
   Your content
 </column>
 ```
-
+Props:
 ```js
 firstXs: { type: Boolean, default: false },
 lastXs: { type: Boolean, default: false },
