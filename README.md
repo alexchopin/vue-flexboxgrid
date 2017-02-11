@@ -117,6 +117,3 @@ md: { type: Number, validator (v) { return v > 0 && v < 13 } },
 lg: { type: Number, validator (v) { return v > 0 && v < 13 } }
 ```
 
-## License
-
-[MIT](http://opensource.org/licenses/MIT)
