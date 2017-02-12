@@ -18,10 +18,12 @@ npm install --save vue-flexboxgrid
 ```js
 import Vue from 'vue'
 import VueFlexboxgrid from 'vue-flexboxgrid'
-// You need a specific loader for CSS files like https://github.com/webpack/css-loader
-import 'vue-flexboxgrid/dist/vue-flexboxgrid.css'
 
 Vue.use(VueFlexboxgrid)
+```
+
+```html
+<style src="vue-flexboxgrid/dist/vue-flexboxgrid.css"/>
 ```
 
 ### Browser
@@ -111,9 +113,8 @@ firstMd: { type: Boolean, default: false },
 lastMd: { type: Boolean, default: false },
 firstLg: { type: Boolean, default: false },
 lastLg: { type: Boolean, default: false },
-xs: { type: Number, default: 12, validator (v) { return v > 0 && v < 13 } },
-sm: { type: Number, validator (v) { return v > 0 && v < 13 } },
-md: { type: Number, validator (v) { return v > 0 && v < 13 } },
-lg: { type: Number, validator (v) { return v > 0 && v < 13 } }
+xs: { type: String, default: 12, validator (v) { var i = parseInt(v); return !isNaN(i) && v > 0 && v < 13 } },
+sm: { type: String, validator (v) { var i = parseInt(v); return !isNaN(i) && v > 0 && v < 13 } },
+md: { type: String, validator (v) { var i = parseInt(v); return !isNaN(i) && v > 0 && v < 13 } },
+lg: { type: String, validator (v) { var i = parseInt(v); return !isNaN(i) && v > 0 && v < 13 } }
 ```
-
