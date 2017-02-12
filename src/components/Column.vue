@@ -15,10 +15,10 @@ export default {
     lastMd: { type: Boolean, default: false },
     firstLg: { type: Boolean, default: false },
     lastLg: { type: Boolean, default: false },
-    xs: { type: Number, default: 12, validator (v) { return v > 0 && v < 13 } },
-    sm: { type: Number, validator (v) { return v > 0 && v < 13 } },
-    md: { type: Number, validator (v) { return v > 0 && v < 13 } },
-    lg: { type: Number, validator (v) { return v > 0 && v < 13 } }
+    xs: { type: String, default: 12, validator (v) { var i = parseInt(v); return !isNaN(i) && v > 0 && v < 13 } },
+    sm: { type: String, validator (v) { var i = parseInt(v); return !isNaN(i) && v > 0 && v < 13 } },
+    md: { type: String, validator (v) { var i = parseInt(v); return !isNaN(i) && v > 0 && v < 13 } },
+    lg: { type: String, validator (v) { var i = parseInt(v); return !isNaN(i) && v > 0 && v < 13 } }
   },
   computed: {
     classes () {
