@@ -15,7 +15,7 @@ export default {
     lastMd: { type: Boolean, default: false },
     firstLg: { type: Boolean, default: false },
     lastLg: { type: Boolean, default: false },
-    xs: { type: String, default: 12, validator (v) { var i = parseInt(v); return !isNaN(i) && v > 0 && v < 13 } },
+    xs: { type: String, default: '12', validator (v) { var i = parseInt(v); return !isNaN(i) && v > 0 && v < 13 } },
     sm: { type: String, validator (v) { var i = parseInt(v); return !isNaN(i) && v > 0 && v < 13 } },
     md: { type: String, validator (v) { var i = parseInt(v); return !isNaN(i) && v > 0 && v < 13 } },
     lg: { type: String, validator (v) { var i = parseInt(v); return !isNaN(i) && v > 0 && v < 13 } }
