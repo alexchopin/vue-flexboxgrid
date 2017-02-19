@@ -15,6 +15,10 @@ export default {
     lastMd: { type: Boolean, default: false },
     firstLg: { type: Boolean, default: false },
     lastLg: { type: Boolean, default: false },
+    xsOffset: { type: String, validator (v) { var i = parseInt(v); return !isNaN(i) && v > 0 && v < 13 } },
+    smOffset: { type: String, validator (v) { var i = parseInt(v); return !isNaN(i) && v > 0 && v < 13 } },
+    mdOffset: { type: String, validator (v) { var i = parseInt(v); return !isNaN(i) && v > 0 && v < 13 } },
+    lgOffset: { type: String, validator (v) { var i = parseInt(v); return !isNaN(i) && v > 0 && v < 13 } },
     xs: { type: String, default: '12', validator (v) { var i = parseInt(v); return !isNaN(i) && v > 0 && v < 13 } },
     sm: { type: String, validator (v) { var i = parseInt(v); return !isNaN(i) && v > 0 && v < 13 } },
     md: { type: String, validator (v) { var i = parseInt(v); return !isNaN(i) && v > 0 && v < 13 } },
@@ -26,6 +30,10 @@ export default {
       c += this.firstSm ? ' first-sm' : (this.lastSm ? ' last-sm' : '')
       c += this.firstMd ? ' first-md' : (this.lastMd ? ' last-md' : '')
       c += this.firstLg ? ' first-lg' : (this.lastLg ? ' last-lg' : '')
+      c += this.xsOffset ? ' col-xs-offset-' + this.xsOffset : ''
+      c += this.smOffset ? ' col-sm-offset-' + this.smOffset : ''
+      c += this.mdOffset ? ' col-md-offset-' + this.mdOffset : ''
+      c += this.lgOffset ? ' col-lg-offset-' + this.lgOffset : ''
       c += ' col-xs-' + this.xs
       c += this.sm ? ' col-sm-' + this.sm : ''
       c += this.md ? ' col-md-' + this.md : ''
