@@ -7,13 +7,13 @@
 <script>
 export default {
   props: {
-    reverse: { type: Boolean, default: false },
+    hero: { type: Boolean, default: false },
     fluid: { type: Boolean, default: false }
   },
   computed: {
     classes () {
       let c = this.fluid ? 'container-fluid ' : 'container '
-      c += this.reverse ? 'reverse' : ''
+      c += this.hero ? 'hero' : ''
       return c
     }
   }
@@ -24,6 +24,13 @@ export default {
 .container-fluid, .container {
   margin-right: auto;
   margin-left: auto;
+}
+
+.container-fluid.hero, .container.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-fluid {

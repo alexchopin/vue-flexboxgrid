@@ -46,7 +46,7 @@ Component:
 ```
 Props:
 ```js
-reverse: { type: Boolean, default: false },
+hero: { type: Boolean, default: false },
 fluid: { type: Boolean, default: false }
 ```
 
