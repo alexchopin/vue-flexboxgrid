@@ -41,21 +41,21 @@ export default {
 @media only screen and (min-width: 48em) {
 
   .container {
-    width: 49rem;
+    width: 45rem;
   }
 }
 
 @media only screen and (min-width: 64em) {
 
   .container {
-    width: 65rem;
+    width: 60rem;
   }
 }
 
 @media only screen and (min-width: 75em) {
 
   .container {
-    width: 76rem;
+    width: 70rem;
   }
 }
 </style>

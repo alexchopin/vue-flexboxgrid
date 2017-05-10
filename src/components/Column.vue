@@ -26,7 +26,8 @@ export default {
   },
   computed: {
     classes () {
-      let c = this.firstXs ? ' first-xs' : (this.lastXs ? ' last-xs' : '')
+      let c = 'col'
+      c += this.firstXs ? ' first-xs' : (this.lastXs ? ' last-xs' : '')
       c += this.firstSm ? ' first-sm' : (this.lastSm ? ' last-sm' : '')
       c += this.firstMd ? ' first-md' : (this.lastMd ? ' last-md' : '')
       c += this.firstLg ? ' first-lg' : (this.lastLg ? ' last-lg' : '')
